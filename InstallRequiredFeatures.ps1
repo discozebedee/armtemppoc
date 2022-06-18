@@ -1,4 +1,15 @@
-﻿Install-WindowsFeature	File-Services
+Set-TimeZone -Id "GMT Standard Time"
+Install-WindowsFeature -name GPMC
+Install-WindowsFeature -name RSAT
+Install-WindowsFeature -name RSAT-Role-Tools
+Install-WindowsFeature -name RSAT-AD-Tools
+Install-WindowsFeature -name RSAT-AD-PowerShell
+Install-WindowsFeature -name RSAT-ADDS
+Install-WindowsFeature -name RSAT-AD-AdminCenter
+Install-WindowsFeature -name RSAT-ADDS-Tools
+Install-WindowsFeature -name RSAT-ADLDS
+Install-WindowsFeature -name RSAT-DNS-Server
+Install-WindowsFeature	File-Services
 Install-WindowsFeature	FS-FileServer
 Install-WindowsFeature	Web-Server
 Install-WindowsFeature	Web-WebServer
