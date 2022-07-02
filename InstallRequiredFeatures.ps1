@@ -1,4 +1,4 @@
-Set-TimeZone -Id "GMT Standard Time"
+# Set-TimeZone -Id "GMT Standard Time"
 Install-WindowsFeature -name GPMC
 Install-WindowsFeature -name RSAT
 Install-WindowsFeature -name RSAT-Role-Tools
