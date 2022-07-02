@@ -1,4 +1,13 @@
-# Set-TimeZone -Id "GMT Standard Time"
+# Set Locale, language etc. 
+& $env:SystemRoot\System32\control.exe "intl.cpl,,/f:`"UKRegion.xml`""
+ 
+# Set Timezone # Set-TimeZone -Id "GMT Standard Time"
+& tzutil /s "GMT Standard Time"
+ 
+# Set languages/culture
+Set-Culture en-GB
+
+# Install Windows Features
 Install-WindowsFeature -name GPMC
 Install-WindowsFeature -name RSAT
 Install-WindowsFeature -name RSAT-Role-Tools
